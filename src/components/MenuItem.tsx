@@ -1,6 +1,5 @@
 import { MenuItem } from "../types"
 
-
 type MenuItemProps = {
   item: MenuItem,
   addItem: (item: MenuItem) => void
@@ -8,7 +7,7 @@ type MenuItemProps = {
 
 export default function MenuItem({item, addItem} : MenuItemProps) {
   return (
-      <button 
+      <button
         className=' border-2 border-orange-700 hover:bg-orange-200 p-3 text-lg  rounded-lg flex justify-between w-full'
         onClick={() => addItem(item)}
       > 
